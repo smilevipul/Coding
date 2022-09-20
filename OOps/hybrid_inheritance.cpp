@@ -1,0 +1,1 @@
+// Combination to two or mpre inheritance

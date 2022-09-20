@@ -1,0 +1,1 @@
+cout<<"Health is "<<a.getHealth()<<endl;
