@@ -1,42 +1,34 @@
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
-int main()
-{
-    // your code goes here
-    int t;
-    cin >> t;
-    while (t--)
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+    int k=0;
+	while(k<t)
     {
-        pair <int, int> p;
-        int n;
-        cin>>n;
-        for (int i = 1; i <= n; i++)
-        {
-            p.first = i;
-            p.second = i;
-        }
-                                    
-       for (int i = 1; i <= n; i++)
-        {
-           cout<<p.first<<" "<<p.second<<endl;
-        }
-
-        // int count = 0;
-        // for (int i = 1; i <= n; i++)
-        // {
-        //     int first = i;
-        //     for (int j = 1; j <= n; j++)
-        //     {
-        //         int second = j;
-
-        //         if ((p.first + p.second) % 3 == 0)
-        //         {
-        //             count++;
-        //         }
-        //     }
-        // }
-        // cout << count << endl;
+        int a,b,i=a,j=i;
+	    cin>>a>>b;
+	    for(i=a;i<j;i++)
+	    {
+	      for(j=i+1;j<=b;j++)
+	      {
+	          int c=b/a;
+	          if(c>1)
+	          {
+	          cout<<i<<" "<<j<<endl;
+	          
+	          }
+	          else
+	          {
+	          cout<<"-1\n";
+	          
+	          }
+	      }
+	    }
+        k++;
     }
-    return 0;
+	
+	return 0;
 }

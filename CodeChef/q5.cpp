@@ -1,38 +1,32 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
+ 
+void solve(){
+ int x,y;
+cin>>x>>y;
 
-int main() {
-	// your code goes here
-	int t;
-	cin>>t;
-	while(t--)
-	{
-	    int n;
-	    char s[n];
-	    cin>>s;
-	    
-	    int flag = 0;
-	    
-	    for(int j=0;j<n;j++)
-	    {
-	        
-	        if(s[j] !='a' || s[j]!='e' || s[j]!='i' || s[j]!='o'|| s[j]!='u')
-	        {
-	            flag++;
-	        }
-	        
-	        if(s[j] =='a' ||s[j] =='e' || s[j] =='i' || s[j] =='o' || s[j] =='u')
-	        {
-                cout<<"No\n";
-	            break;
-	        }
-	        
-	    }
-	    if(flag>=4)
-	    {
-	        cout<<"Yes\n";
-	    }	    
-	    
-	}
-	return 0;
+int k=y/x;
+int r=k*x;
+if(x<y && (k*x)<y)
+{
+    cout<<k<<endl;
+}
+else if (x<y &&  r==y)
+{cout<<(k-1);
+}
+ else 
+{
+    cout<<0<<endl;
+}
+ 
+ cout<<endl;}
+int main()
+{
+    int t;
+    cin >> t;
+    while (t--)
+    {
+        solve();
+    }
+    return 0;
 }
