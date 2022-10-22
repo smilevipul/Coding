@@ -1,0 +1,1 @@
+{"name":"Local: pre_computation","url":"/home/vipul/Desktop/Coding/Luv/pre_computation.cpp","tests":[{"id":1665725506391,"input":"6\n1 1 1 2 2 3\n3\n1\n2\n3","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/vipul/Desktop/Coding/Luv/pre_computation.cpp","group":"local","local":true}

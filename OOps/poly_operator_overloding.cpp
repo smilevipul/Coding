@@ -1,6 +1,4 @@
 
-
-
 #include<iostream>
 using namespace std;
 
@@ -14,16 +12,36 @@ class Poly{
         return (a+b);
     }
 
+
+    //operator overloading
     void operator+ (Poly &obj)
     {
         int value1 = this->a;
         int value2 = obj.a;
-        cout<<"output "<<value2-value1<<endl;
+        cout<<"Addition of Objects result"<<value2+value1<<endl;
+    }
+    void operator- (Poly &obj)
+    {
+        int value1 = this->a;
+        int value2 = obj.a;
+        cout<<"Subtraction of objects result "<<value2-value1<<endl;
+    }
+    void operator * (Poly &obj)
+    {
+        int value1 = this->a;
+        int value2 = obj.a;
+        cout<<"Multiplication of objects result "<<value2*value1<<endl;
+    }
+    void operator / (Poly &obj)
+    {
+        int value1 = this->a;
+        int value2 = obj.a;
+        cout<<"Division of objects result "<<value2/value1<<endl;
     }
 
-    void operator() (){
-        cout<<"Me bracket hu "<<this->a<<endl;
-    }
+    // void operator() (){
+    //     cout<<"Me bracket hu "<<this->a<<endl;
+    // }
 
 };
 
@@ -47,15 +65,18 @@ class Dog : public Animal{
 
 int main()
 {
-    Dog d;
-    d.speak();
+    // Dog d;
+    // d.speak();
 
 
-    // Poly obj1,obj2;
-    // obj1.a = 4;
-    // obj2.a =7;
+    Poly obj1,obj2;
+    obj1.a = 4;
+    obj2.a =7;
 
-    // obj1 + obj2;
+    obj1 + obj2;
+    obj1 - obj2;
+    obj1 * obj2;
+    obj1 / obj2;
     // obj2();
 
 }

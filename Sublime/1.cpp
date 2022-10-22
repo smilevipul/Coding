@@ -8,4 +8,5 @@ int main()
 	char ch[n];
 	cin>>ch;
 	cout<<ch;
-}
+	lo hmne manjoor
+} 
